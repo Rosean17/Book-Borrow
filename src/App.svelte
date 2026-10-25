@@ -17,6 +17,22 @@ let borrowers = [];
   let saving = false;
   let errorMessage = '';
   let successMessage = '';
+  let editingBook = null;
+let editingBorrower = null;
+
+let editBookForm = {
+  title: '',
+  author: '',
+  isbn: '',
+  category: '',
+  total_copies: 1
+};
+
+let editBorrowerForm = {
+  full_name: '',
+  student_id: '',
+  contact: ''
+};
 
   /** @type {any[]} */
   let borrowRecords = [];
